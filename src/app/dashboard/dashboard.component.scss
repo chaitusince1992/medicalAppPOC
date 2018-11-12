@@ -1,0 +1,35 @@
+$side-menu-width: 250px;
+
+.wrapper {
+    height: 94vh;
+    display: flex;
+}
+.side-nav-wrapper {
+    height: 100%;
+    // display: inline-block;
+    width: $side-menu-width;
+    background-color: red;
+    transition: width 0.32s ease-in-out;
+    // overflow: hidden;
+    .nav-bar {
+        width: $side-menu-width;
+        padding: 10px;
+        height: 100%;
+    }
+    &.collapse {
+        width: 0;
+    }
+}
+.dashboard-wrapper {
+    height: 100%;
+    // display: inline-block;
+    width: calc(100% - $side-menu-width);
+    background-color: blue;
+    transition: width 0.32s ease-in-out;
+    &.expand {
+        width: 100%;
+    }
+    .content {
+        padding: 10px;
+    }
+}

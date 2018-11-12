@@ -1,0 +1,36 @@
+.window-tool-bar {
+    display: flex;
+    -webkit-app-region: drag;
+    .left-bar {
+        width: 50%;
+        // text-align: left;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .right-bar {
+        width: 50%;
+        text-align: right;
+        >div {
+            display: inline-flex;
+            width: 35px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            -webkit-app-region: no-drag;
+            &:hover {
+                background-color: #c3c3c3;
+            }
+        }
+        // .close-menu {
+        //     position: absolute;
+        //     right: 0;
+        //     height: 100%;
+        //     display: flex;
+        // }
+
+    }
+    // height: 40px;
+    // position: relative;
+}

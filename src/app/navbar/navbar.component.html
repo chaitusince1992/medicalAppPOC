@@ -1,0 +1,12 @@
+<div class="profile-window">
+  <div class="profile-photo" (click)="takePicture()">
+    
+  </div>
+</div>
+
+<div class="nav-items">
+  <button (click)="stop()">Stop Stream</button>
+  <input type="file" accept="image/*;capture=camera">
+</div>
+
+<video id="take-snap" autoplay></video>

@@ -1,1 +1,18 @@
-<app-login></app-login>
+<!-- <div class="window-tool-bar"> -->
+<div class="window-tool-bar" *ngIf="this.electronSer.isElectronApp">
+    <div class="left-bar">
+        Medical App
+    </div>
+    <div class="right-bar">      
+        <!-- <div class="close-menu"> -->
+            <div class="dev" (click)="toggleDev()">D</div>
+            <div class="minimise" (click)="minimise()">-</div>
+            <div class="maximise" (click)="maximise()">
+                <div *ngIf="!currentWindow.isMaximized()">M</div>
+                <div *ngIf="currentWindow.isMaximized()">m</div>
+            </div>
+            <div class="close" (click)="close()">X</div>
+        <!-- </div> -->
+    </div>
+</div>
+<router-outlet></router-outlet>
